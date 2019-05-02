@@ -78,9 +78,9 @@
 		AF60B724227B05D40060608C = {
 			isa = PBXGroup;
 			children = (
-				AF60B761227B0E210060608C /* Kingfisher.framework */,
 				AF60B72F227B05D40060608C /* RiksdagsMemo */,
 				AF60B72E227B05D40060608C /* Products */,
+				AF60B761227B0E210060608C /* Kingfisher.framework */,
 			);
 			sourceTree = "<group>";
 		};

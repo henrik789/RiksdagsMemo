@@ -6,24 +6,24 @@ class PersonViewModel {
     private(set) var persons: [Person] = []
     //    private(set) var images: [Image] = []
     private(set) var image = UIImage()
-    let title = "Adressbook"
+    let title = "Persons"
     
     init(dataManager: DataManager) {
         self.dataManager = dataManager
     }
     
-    func updatePersons(completion: @escaping (Error?) -> Void) {
-        dataManager.getUsers { (users, error) in
-            print("- -  checking - -")
-            guard error == nil else {
-                dispatchOnMain(completion, with: error)
-                return
-            }
-            self.persons = users
-            dispatchOnMain(completion, with: nil)
-            print("hej")
-        }
-    }
+//    func updatePersons(completion: @escaping (Error?) -> Void) {
+//        dataManager.getPersons { (users, error) in
+//            print("- -  checking - -")
+//            guard error == nil else {
+//                dispatchOnMain(completion, with: error)
+//                return
+//            }
+//            self.persons = users
+//            dispatchOnMain(completion, with: nil)
+//            print("hej")
+//        }
+//    }
     
     func updateImages(completion: @escaping (Error?) -> Void) {
         dataManager.getImages { (image, error) in
