@@ -12,7 +12,34 @@
 		AF60B736227B05D40060608C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF60B734227B05D40060608C /* Main.storyboard */; };
 		AF60B738227B05D60060608C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF60B737227B05D60060608C /* Assets.xcassets */; };
 		AF60B73B227B05D60060608C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF60B739227B05D60060608C /* LaunchScreen.storyboard */; };
+		AF60B748227B087C0060608C /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B747227B087C0060608C /* MainNavigationController.swift */; };
+		AF60B74B227B090B0060608C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B749227B090B0060608C /* HomeViewController.swift */; };
+		AF60B74C227B090B0060608C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF60B74A227B090B0060608C /* HomeViewController.xib */; };
+		AF60B74E227B09B80060608C /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B74D227B09B80060608C /* ServiceManager.swift */; };
+		AF60B750227B09E80060608C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B74F227B09E80060608C /* DataManager.swift */; };
+		AF60B752227B0A390060608C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B751227B0A390060608C /* NetworkService.swift */; };
+		AF60B754227B0A530060608C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B753227B0A530060608C /* Request.swift */; };
+		AF60B756227B0A7D0060608C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B755227B0A7D0060608C /* Person.swift */; };
+		AF60B75F227B0D230060608C /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B75D227B0D230060608C /* PersonViewController.swift */; };
+		AF60B760227B0D230060608C /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF60B75E227B0D230060608C /* PersonViewController.xib */; };
+		AF60B763227B0E290060608C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF60B761227B0E210060608C /* Kingfisher.framework */; };
+		AF60B764227B0E290060608C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF60B761227B0E210060608C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF60B767227B0E760060608C /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B766227B0E760060608C /* PersonViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF60B765227B0E290060608C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AF60B764227B0E290060608C /* Kingfisher.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AF60B72D227B05D40060608C /* RiksdagsMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiksdagsMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +49,18 @@
 		AF60B737227B05D60060608C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF60B73A227B05D60060608C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF60B73C227B05D60060608C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF60B747227B087C0060608C /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		AF60B749227B090B0060608C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AF60B74A227B090B0060608C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		AF60B74D227B09B80060608C /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		AF60B74F227B09E80060608C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		AF60B751227B0A390060608C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AF60B753227B0A530060608C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		AF60B755227B0A7D0060608C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		AF60B75D227B0D230060608C /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		AF60B75E227B0D230060608C /* PersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
+		AF60B761227B0E210060608C /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
+		AF60B766227B0E760060608C /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF60B763227B0E290060608C /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +78,7 @@
 		AF60B724227B05D40060608C = {
 			isa = PBXGroup;
 			children = (
+				AF60B761227B0E210060608C /* Kingfisher.framework */,
 				AF60B72F227B05D40060608C /* RiksdagsMemo */,
 				AF60B72E227B05D40060608C /* Products */,
 			);
@@ -54,6 +95,10 @@
 		AF60B72F227B05D40060608C /* RiksdagsMemo */ = {
 			isa = PBXGroup;
 			children = (
+				AF60B746227B08340060608C /* Navigation */,
+				AF60B745227B08320060608C /* Services */,
+				AF60B743227B08020060608C /* Screens */,
+				AF60B742227B07F50060608C /* Helpers */,
 				AF60B730227B05D40060608C /* AppDelegate.swift */,
 				AF60B732227B05D40060608C /* ViewController.swift */,
 				AF60B734227B05D40060608C /* Main.storyboard */,
@@ -62,6 +107,69 @@
 				AF60B73C227B05D60060608C /* Info.plist */,
 			);
 			path = RiksdagsMemo;
+			sourceTree = "<group>";
+		};
+		AF60B742227B07F50060608C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AF60B743227B08020060608C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AF60B75C227B0D0F0060608C /* Person */,
+				AF60B75B227B0D030060608C /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AF60B744227B080E0060608C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AF60B74F227B09E80060608C /* DataManager.swift */,
+				AF60B755227B0A7D0060608C /* Person.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AF60B745227B08320060608C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AF60B74D227B09B80060608C /* ServiceManager.swift */,
+				AF60B751227B0A390060608C /* NetworkService.swift */,
+				AF60B744227B080E0060608C /* Data */,
+				AF60B753227B0A530060608C /* Request.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AF60B746227B08340060608C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				AF60B747227B087C0060608C /* MainNavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		AF60B75B227B0D030060608C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AF60B749227B090B0060608C /* HomeViewController.swift */,
+				AF60B74A227B090B0060608C /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AF60B75C227B0D0F0060608C /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				AF60B75D227B0D230060608C /* PersonViewController.swift */,
+				AF60B75E227B0D230060608C /* PersonViewController.xib */,
+				AF60B766227B0E760060608C /* PersonViewModel.swift */,
+			);
+			path = Person;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +182,7 @@
 				AF60B729227B05D40060608C /* Sources */,
 				AF60B72A227B05D40060608C /* Frameworks */,
 				AF60B72B227B05D40060608C /* Resources */,
+				AF60B765227B0E290060608C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,8 +232,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF60B73B227B05D60060608C /* LaunchScreen.storyboard in Resources */,
+				AF60B760227B0D230060608C /* PersonViewController.xib in Resources */,
 				AF60B738227B05D60060608C /* Assets.xcassets in Resources */,
 				AF60B736227B05D40060608C /* Main.storyboard in Resources */,
+				AF60B74C227B090B0060608C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +246,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF60B748227B087C0060608C /* MainNavigationController.swift in Sources */,
+				AF60B754227B0A530060608C /* Request.swift in Sources */,
+				AF60B750227B09E80060608C /* DataManager.swift in Sources */,
+				AF60B767227B0E760060608C /* PersonViewModel.swift in Sources */,
 				AF60B733227B05D40060608C /* ViewController.swift in Sources */,
 				AF60B731227B05D40060608C /* AppDelegate.swift in Sources */,
+				AF60B75F227B0D230060608C /* PersonViewController.swift in Sources */,
+				AF60B74B227B090B0060608C /* HomeViewController.swift in Sources */,
+				AF60B756227B0A7D0060608C /* Person.swift in Sources */,
+				AF60B74E227B09B80060608C /* ServiceManager.swift in Sources */,
+				AF60B752227B0A390060608C /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +404,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LT2ZWB24ZA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RiksdagsMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +426,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LT2ZWB24ZA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RiksdagsMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
