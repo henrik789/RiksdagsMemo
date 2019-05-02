@@ -12,18 +12,19 @@ class PersonViewModel {
         self.dataManager = dataManager
     }
     
-//    func updatePersons(completion: @escaping (Error?) -> Void) {
-//        dataManager.getPersons { (users, error) in
-//            print("- -  checking - -")
-//            guard error == nil else {
-//                dispatchOnMain(completion, with: error)
-//                return
-//            }
-//            self.persons = users
-//            dispatchOnMain(completion, with: nil)
-//            print("hej")
-//        }
-//    }
+    func updatePersons(completion: @escaping (Error?) -> Void) {
+        dataManager.getPersons { (persons, error) in
+            print("- -  checking - -")
+            guard error == nil else {
+                dispatchOnMain(completion, with: error)
+                return
+            }
+            self.persons = persons
+            
+            dispatchOnMain(completion, with: nil)
+            print("hej")
+        }
+    }
     
     func updateImages(completion: @escaping (Error?) -> Void) {
         dataManager.getImages { (image, error) in

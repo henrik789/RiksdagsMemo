@@ -23,33 +23,21 @@ class PersonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        initConfig()
-        viewModel.dataManager.getAllData { (persons, error) in
-            print("Lista: ")
-            print(self.viewModel.dataManager.list.count)
-            
-            DispatchQueue.main.async {
-                self.firstname.text = persons[2].firstName
-                self.lastname.text = persons[44].lastName
-                self.party.text = persons[322].parti
-                self.birth.text = persons[12].fullName()
-            }
-            
-            
-        }
+        initConfig()
 
     }
     
-//    func initConfig() {
-//        self.title = viewModel.title
-//        loadData()
-//    }
+    func initConfig() {
+        self.title = viewModel.title
+        loadData()
 
-//    func loadData() {
-//        viewModel.updatePersons { (error) in
-//            self.view.updateFocusIfNeeded()
-//            print(self.viewModel.persons.count)
-//        }
-//    }
+    }
+
+    func loadData() {
+        viewModel.updatePersons { (error) in
+            self.view.updateFocusIfNeeded()
+ 
+        }
+    }
 }
 
