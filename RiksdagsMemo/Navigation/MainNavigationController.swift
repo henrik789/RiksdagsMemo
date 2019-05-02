@@ -39,9 +39,14 @@ extension MainNavigationController: HomeViewControllerDelegate {
     func homeViewController(_ viewController: HomeViewController, didSelect action: HomeViewControllerAction) {
         
         let viewController: UIViewController
-        
-        let personViewModel = PersonViewModel(dataManager: serviceManager.dataManager)
-        viewController = PersonViewController(viewModel: personViewModel)
+        switch action {
+        case .person:
+            let personViewModel = PersonViewModel(dataManager: serviceManager.dataManager)
+            viewController = PersonViewController(viewModel: personViewModel)
+        default:
+            return
+        }
+
         
         pushViewController(viewController, animated: true)
         

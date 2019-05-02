@@ -3,7 +3,7 @@ import UIKit
 
 class PersonViewModel {
     let dataManager: DataManager
-    private(set) var users: [User] = []
+    private(set) var persons: [Person] = []
     //    private(set) var images: [Image] = []
     private(set) var image = UIImage()
     let title = "Adressbook"
@@ -12,15 +12,16 @@ class PersonViewModel {
         self.dataManager = dataManager
     }
     
-    func updateUsers(completion: @escaping (Error?) -> Void) {
+    func updatePersons(completion: @escaping (Error?) -> Void) {
         dataManager.getUsers { (users, error) in
             print("- -  checking - -")
             guard error == nil else {
                 dispatchOnMain(completion, with: error)
                 return
             }
-            self.users = users
+            self.persons = users
             dispatchOnMain(completion, with: nil)
+            print("hej")
         }
     }
     

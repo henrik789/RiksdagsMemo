@@ -19,11 +19,19 @@ class PersonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initConfig()
+
     }
     
     func initConfig() {
         self.title = viewModel.title
+        loadData()
     }
-    
+
+    func loadData() {
+        viewModel.updatePersons { (error) in
+            self.view.updateFocusIfNeeded()
+            print(self.viewModel.persons.count)
+        }
+    }
 }
 

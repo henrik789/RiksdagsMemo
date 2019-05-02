@@ -10,7 +10,7 @@ class  DataManager {
         self.networkService = networkService
     }
     
-    func getUsers(completion: @escaping ([User], Error?) -> Void) {
+    func getUsers(completion: @escaping ([Person], Error?) -> Void) {
         networkService.addRequest(.getUsers) { (data, response, error)  in
             guard let data = data , error == nil else {
                 let error = error ?? badResponseError
@@ -20,7 +20,7 @@ class  DataManager {
             
             do {
                 let decoder = JSONDecoder()
-                let users = try decoder.decode([User].self, from: data)
+                let users = try decoder.decode([Person].self, from: data)
                 completion(users, nil)
             } catch {
                 completion([], error)

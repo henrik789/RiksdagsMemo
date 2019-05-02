@@ -139,8 +139,8 @@
 			children = (
 				AF60B74D227B09B80060608C /* ServiceManager.swift */,
 				AF60B751227B0A390060608C /* NetworkService.swift */,
-				AF60B744227B080E0060608C /* Data */,
 				AF60B753227B0A530060608C /* Request.swift */,
+				AF60B744227B080E0060608C /* Data */,
 			);
 			path = Services;
 			sourceTree = "<group>";

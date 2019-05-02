@@ -6,7 +6,7 @@ protocol HomeViewControllerDelegate: class {
 }
 
 enum HomeViewControllerAction {
-    case users, images, imageGallery
+    case person
 }
 
 class HomeViewController: UIViewController {
@@ -30,9 +30,9 @@ class HomeViewController: UIViewController {
         let navbar = navigationController?.navigationBar
         navbar?.prefersLargeTitles = true
         navbar?.barStyle = .default
-        navbar?.barTintColor = UIColor.blue
-        navbar?.tintColor = UIColor.blue
-
+        navbar?.barTintColor = UIColor.yellow
+        navbar?.tintColor = UIColor.yellow
+        delegate?.homeViewController(self, didSelect: .person)
     }
 }
 
