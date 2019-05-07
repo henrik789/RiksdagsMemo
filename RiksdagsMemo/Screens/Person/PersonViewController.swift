@@ -6,11 +6,13 @@ private let cellIdentifier = "BasicCell"
 class PersonViewController: UIViewController {
     
     let viewModel: PersonViewModel
-    let persons = [Person]()
+
     @IBOutlet weak var firstname: UILabel!
     @IBOutlet weak var lastname: UILabel!
     @IBOutlet weak var party: UILabel!
     @IBOutlet weak var birth: UILabel!
+    
+ 
     
     init(viewModel: PersonViewModel) {
         self.viewModel = viewModel
@@ -34,10 +36,19 @@ class PersonViewController: UIViewController {
     }
 
     func loadData() {
-        viewModel.updatePersons { (error) in
-            self.view.updateFocusIfNeeded()
- 
+
+        viewModel.updatePersons {
+            (error) in
+            print(self.viewModel.persons.count)
+            print(self.viewModel.persons[5])
+            
         }
+        
+//        viewModel.updatePersons { (error) in
+//            self.view.updateConstraints()
+//            print(self.viewModel.persons.count)
+//            print(self.viewModel.persons)
+//        }
     }
 }
 
