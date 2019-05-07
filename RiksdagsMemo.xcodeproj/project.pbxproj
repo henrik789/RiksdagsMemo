@@ -25,6 +25,8 @@
 		AF60B763227B0E290060608C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF60B761227B0E210060608C /* Kingfisher.framework */; };
 		AF60B764227B0E290060608C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF60B761227B0E210060608C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF60B767227B0E760060608C /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B766227B0E760060608C /* PersonViewModel.swift */; };
+		AFBE401D22819B0200498E0C /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBE401B22819B0200498E0C /* PersonCollectionViewCell.swift */; };
+		AFBE401E22819B0200498E0C /* PersonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBE401C22819B0200498E0C /* PersonCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +63,8 @@
 		AF60B75E227B0D230060608C /* PersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
 		AF60B761227B0E210060608C /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
 		AF60B766227B0E760060608C /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		AFBE401B22819B0200498E0C /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
+		AFBE401C22819B0200498E0C /* PersonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,8 @@
 				AF60B75D227B0D230060608C /* PersonViewController.swift */,
 				AF60B75E227B0D230060608C /* PersonViewController.xib */,
 				AF60B766227B0E760060608C /* PersonViewModel.swift */,
+				AFBE401B22819B0200498E0C /* PersonCollectionViewCell.swift */,
+				AFBE401C22819B0200498E0C /* PersonCollectionViewCell.xib */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF60B73B227B05D60060608C /* LaunchScreen.storyboard in Resources */,
+				AFBE401E22819B0200498E0C /* PersonCollectionViewCell.xib in Resources */,
 				AF60B760227B0D230060608C /* PersonViewController.xib in Resources */,
 				AF60B738227B05D60060608C /* Assets.xcassets in Resources */,
 				AF60B736227B05D40060608C /* Main.storyboard in Resources */,
@@ -253,6 +260,7 @@
 				AF60B733227B05D40060608C /* ViewController.swift in Sources */,
 				AF60B731227B05D40060608C /* AppDelegate.swift in Sources */,
 				AF60B75F227B0D230060608C /* PersonViewController.swift in Sources */,
+				AFBE401D22819B0200498E0C /* PersonCollectionViewCell.swift in Sources */,
 				AF60B74B227B090B0060608C /* HomeViewController.swift in Sources */,
 				AF60B756227B0A7D0060608C /* Person.swift in Sources */,
 				AF60B74E227B09B80060608C /* ServiceManager.swift in Sources */,

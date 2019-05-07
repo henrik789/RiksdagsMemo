@@ -6,13 +6,8 @@ private let cellIdentifier = "BasicCell"
 class PersonViewController: UIViewController {
     
     let viewModel: PersonViewModel
-
-    @IBOutlet weak var firstname: UILabel!
-    @IBOutlet weak var lastname: UILabel!
-    @IBOutlet weak var party: UILabel!
-    @IBOutlet weak var birth: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
     
- 
     
     init(viewModel: PersonViewModel) {
         self.viewModel = viewModel
@@ -26,29 +21,51 @@ class PersonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initConfig()
-
+        
     }
     
     func initConfig() {
-        self.title = viewModel.title
         loadData()
-
+        
+        
     }
-
+    
     func loadData() {
-
         viewModel.updatePersons {
             (error) in
-            print(self.viewModel.persons.count)
-            print(self.viewModel.persons[5])
-            
+            self.collectionView.reloadData()
+            print(self.viewModel.persons)
+            self.title = self.viewModel.title
+            self.collectionView.dataSource = self
+            self.collectionView.delegate = self
+            self.collectionView.register(UINib.init(nibName: PersonCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: PersonCollectionViewCell.identifier)
         }
-        
-//        viewModel.updatePersons { (error) in
-//            self.view.updateConstraints()
-//            print(self.viewModel.persons.count)
-//            print(self.viewModel.persons)
-//        }
     }
 }
 
+extension PersonViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel.persons.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PersonCollectionViewCell.identifier, for: indexPath) as! PersonCollectionViewCell
+        let person = viewModel.persons[indexPath.row]
+        cell.config()
+        cell.fullnameLabel.text = person.fullName()
+        cell.gender.text = person.age()
+        cell.party.text = person.parti
+        cell.status.text = person.status
+        let url = URL(string: person.urlLink)
+        print(person.urlLink)
+        cell.imageView.kf.indicatorType = .activity
+        cell.imageView.kf.setImage(with: url)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //        let vc = MapViewController()
+        //        self.present(vc, animated: true, completion: nil)
+    }
+}
