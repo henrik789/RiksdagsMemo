@@ -20,7 +20,6 @@ class PersonViewModel {
             self.persons = persons
             print(persons.count)
             dispatchOnMain(completion, with: nil)
-            print("hej")
         }
     }
     

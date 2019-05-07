@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonViewController" customModule="RiksdagsMemo" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="ppG-Ud-x2h" id="7PJ-To-eyp"/>
                 <outlet property="collectionView" destination="MOi-1g-HJD" id="55V-cO-0Zb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,18 +26,28 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oAu-u3-CJb">
-                        <size key="itemSize" width="300" height="164"/>
+                        <size key="itemSize" width="340" height="164"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ppG-Ud-x2h">
+                    <rect key="frame" x="157.5" y="303.5" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="af4-Gs-UaH"/>
+                        <constraint firstAttribute="height" constant="60" id="b5g-N0-oGQ"/>
+                    </constraints>
+                    <color key="color" red="0.0049215736798942089" green="0.24897623062133789" blue="0.99694114923477173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="MOi-1g-HJD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="28O-nY-P3a"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MOi-1g-HJD" secondAttribute="bottom" id="7sB-Oo-EQj"/>
+                <constraint firstItem="ppG-Ud-x2h" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="JGx-EI-Nqk"/>
                 <constraint firstItem="MOi-1g-HJD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fbv-Y0-Jjp"/>
+                <constraint firstItem="ppG-Ud-x2h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gea-Ww-1U0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MOi-1g-HJD" secondAttribute="trailing" id="ocQ-LD-qgP"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -7,6 +7,7 @@ class PersonViewController: UIViewController {
     
     let viewModel: PersonViewModel
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     
     init(viewModel: PersonViewModel) {
@@ -31,6 +32,7 @@ class PersonViewController: UIViewController {
     }
     
     func loadData() {
+        activityIndicator.startAnimating()
         viewModel.updatePersons {
             (error) in
             self.collectionView.reloadData()
@@ -39,6 +41,7 @@ class PersonViewController: UIViewController {
             self.collectionView.dataSource = self
             self.collectionView.delegate = self
             self.collectionView.register(UINib.init(nibName: PersonCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: PersonCollectionViewCell.identifier)
+        
         }
     }
 }
@@ -51,16 +54,11 @@ extension PersonViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PersonCollectionViewCell.identifier, for: indexPath) as! PersonCollectionViewCell
+        self.activityIndicator.stopAnimating()
+        self.activityIndicator.hidesWhenStopped = true
         let person = viewModel.persons[indexPath.row]
-        cell.config()
-        cell.fullnameLabel.text = person.fullName()
-        cell.gender.text = person.age()
-        cell.party.text = person.parti
-        cell.status.text = person.status
-        let url = URL(string: person.urlLink)
-        print(person.urlLink)
-        cell.imageView.kf.indicatorType = .activity
-        cell.imageView.kf.setImage(with: url)
+        cell.config(firstName: person.fullName(), status: person.status, party: person.parti, urlLink: person.urlLink, age: person.age())
+    
         return cell
     }
     
