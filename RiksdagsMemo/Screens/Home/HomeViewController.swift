@@ -12,6 +12,10 @@ enum HomeViewControllerAction {
 class HomeViewController: UIViewController {
     weak var delegate: HomeViewControllerDelegate?
     
+    @IBOutlet weak var factsButton: UIButton!
+    @IBOutlet weak var graphsButton: UIButton!
+    @IBOutlet weak var memoryButton: UIButton!
+    @IBOutlet weak var personsButton: UIButton!
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -25,14 +29,21 @@ class HomeViewController: UIViewController {
         config()
     }
     
+    @IBAction func personsButton(_ sender: Any) {
+        delegate?.homeViewController(self, didSelect: .person)
+    }
     func config(){
-
+        personsButton.commonStyle()
+        factsButton.commonStyle()
+        memoryButton.commonStyle()
+        graphsButton.commonStyle()
+        
         let navbar = navigationController?.navigationBar
         navbar?.prefersLargeTitles = true
         navbar?.barStyle = .default
-        navbar?.barTintColor = UIColor.yellow
-        navbar?.tintColor = UIColor.yellow
-        delegate?.homeViewController(self, didSelect: .person)
+        navbar?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black,  NSAttributedString.Key.font: UIFont(name: "Avenir Next", size: 21)!]
+        navbar?.tintColor = UIColor.black
+
     }
 }
 

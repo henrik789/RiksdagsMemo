@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23C51111B44D0293820018EB /* Pods_RiksdagsMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3320E57FB700B946EE885881 /* Pods_RiksdagsMemo.framework */; };
 		AF60B731227B05D40060608C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B730227B05D40060608C /* AppDelegate.swift */; };
 		AF60B733227B05D40060608C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B732227B05D40060608C /* ViewController.swift */; };
 		AF60B736227B05D40060608C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF60B734227B05D40060608C /* Main.storyboard */; };
@@ -22,28 +23,16 @@
 		AF60B756227B0A7D0060608C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B755227B0A7D0060608C /* Person.swift */; };
 		AF60B75F227B0D230060608C /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B75D227B0D230060608C /* PersonViewController.swift */; };
 		AF60B760227B0D230060608C /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF60B75E227B0D230060608C /* PersonViewController.xib */; };
-		AF60B763227B0E290060608C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF60B761227B0E210060608C /* Kingfisher.framework */; };
-		AF60B764227B0E290060608C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF60B761227B0E210060608C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF60B767227B0E760060608C /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60B766227B0E760060608C /* PersonViewModel.swift */; };
+		AFBBA8EF22831A9F0091752A /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBBA8EE22831A9F0091752A /* UIButton.swift */; };
 		AFBE401D22819B0200498E0C /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBE401B22819B0200498E0C /* PersonCollectionViewCell.swift */; };
 		AFBE401E22819B0200498E0C /* PersonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBE401C22819B0200498E0C /* PersonCollectionViewCell.xib */; };
+		AFBE40202281C0AB00498E0C /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBE401F2281C0AB00498E0C /* Gradient.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		AF60B765227B0E290060608C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				AF60B764227B0E290060608C /* Kingfisher.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		3320E57FB700B946EE885881 /* Pods_RiksdagsMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiksdagsMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A64996BD1A25D193AF92B78 /* Pods-RiksdagsMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiksdagsMemo.release.xcconfig"; path = "Target Support Files/Pods-RiksdagsMemo/Pods-RiksdagsMemo.release.xcconfig"; sourceTree = "<group>"; };
 		AF60B72D227B05D40060608C /* RiksdagsMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiksdagsMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF60B730227B05D40060608C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF60B732227B05D40060608C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,8 +52,11 @@
 		AF60B75E227B0D230060608C /* PersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
 		AF60B761227B0E210060608C /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
 		AF60B766227B0E760060608C /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		AFBBA8EE22831A9F0091752A /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		AFBE401B22819B0200498E0C /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
 		AFBE401C22819B0200498E0C /* PersonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionViewCell.xib; sourceTree = "<group>"; };
+		AFBE401F2281C0AB00498E0C /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		D26FC749DDC983F5F43EF6AD /* Pods-RiksdagsMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiksdagsMemo.debug.xcconfig"; path = "Target Support Files/Pods-RiksdagsMemo/Pods-RiksdagsMemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,19 +64,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF60B763227B0E290060608C /* Kingfisher.framework in Frameworks */,
+				23C51111B44D0293820018EB /* Pods_RiksdagsMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20BF5884D92B8EAFF63A457D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3320E57FB700B946EE885881 /* Pods_RiksdagsMemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF60B724227B05D40060608C = {
 			isa = PBXGroup;
 			children = (
 				AF60B72F227B05D40060608C /* RiksdagsMemo */,
 				AF60B72E227B05D40060608C /* Products */,
 				AF60B761227B0E210060608C /* Kingfisher.framework */,
+				E9FB8F73BCE34D43CFD715ED /* Pods */,
+				20BF5884D92B8EAFF63A457D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +118,8 @@
 		AF60B742227B07F50060608C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				AFBBA8EE22831A9F0091752A /* UIButton.swift */,
+				AFBE401F2281C0AB00498E0C /* Gradient.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -178,6 +182,15 @@
 			path = Person;
 			sourceTree = "<group>";
 		};
+		E9FB8F73BCE34D43CFD715ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D26FC749DDC983F5F43EF6AD /* Pods-RiksdagsMemo.debug.xcconfig */,
+				5A64996BD1A25D193AF92B78 /* Pods-RiksdagsMemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,10 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF60B73F227B05D60060608C /* Build configuration list for PBXNativeTarget "RiksdagsMemo" */;
 			buildPhases = (
+				46B62F5B7BD12C454F798503 /* [CP] Check Pods Manifest.lock */,
 				AF60B729227B05D40060608C /* Sources */,
 				AF60B72A227B05D40060608C /* Frameworks */,
 				AF60B72B227B05D40060608C /* Resources */,
-				AF60B765227B0E290060608C /* Embed Frameworks */,
+				798FD02CDB85CC93BFC02198 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,6 +225,7 @@
 				TargetAttributes = {
 					AF60B72C227B05D40060608C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -248,6 +263,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46B62F5B7BD12C454F798503 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RiksdagsMemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		798FD02CDB85CC93BFC02198 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RiksdagsMemo/Pods-RiksdagsMemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RiksdagsMemo/Pods-RiksdagsMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF60B729227B05D40060608C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +328,8 @@
 				AF60B74B227B090B0060608C /* HomeViewController.swift in Sources */,
 				AF60B756227B0A7D0060608C /* Person.swift in Sources */,
 				AF60B74E227B09B80060608C /* ServiceManager.swift in Sources */,
+				AFBBA8EF22831A9F0091752A /* UIButton.swift in Sources */,
+				AFBE40202281C0AB00498E0C /* Gradient.swift in Sources */,
 				AF60B752227B0A390060608C /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +474,7 @@
 		};
 		AF60B740227B05D60060608C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26FC749DDC983F5F43EF6AD /* Pods-RiksdagsMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -423,13 +490,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.larssonhenrik.abc.RiksdagsMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		AF60B741227B05D60060608C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A64996BD1A25D193AF92B78 /* Pods-RiksdagsMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,7 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.larssonhenrik.abc.RiksdagsMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

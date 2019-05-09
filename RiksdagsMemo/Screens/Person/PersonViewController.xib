@@ -41,7 +41,7 @@
                     <color key="color" red="0.0049215736798942089" green="0.24897623062133789" blue="0.99694114923477173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </activityIndicatorView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
                 <constraint firstItem="MOi-1g-HJD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="28O-nY-P3a"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MOi-1g-HJD" secondAttribute="bottom" id="7sB-Oo-EQj"/>
@@ -51,6 +51,15 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MOi-1g-HJD" secondAttribute="trailing" id="ocQ-LD-qgP"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                    <color key="value" red="0.21720483899116516" green="0.91852253675460815" blue="0.70583933591842651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
         </view>
     </objects>

@@ -4,7 +4,7 @@ import UIKit
 class PersonViewModel {
     let dataManager: DataManager
     private(set) var persons: [Person] = []
-    let title = "Persons"
+    let title = "Riksdagsledamöter"
     
     init(dataManager: DataManager) {
         self.dataManager = dataManager

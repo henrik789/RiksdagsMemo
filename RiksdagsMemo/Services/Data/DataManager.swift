@@ -37,9 +37,10 @@ class  DataManager {
                                     let urlLink = person["bild_url_192"] as? String,
                                     let status = person["status"] as? String,
                                     let imageMax = person["bild_url_max"] as? String,
+                                    let valkrets = person["valkrets"] as? String,
                                     let gender = person["kon"] as? String {
                                     
-                                    let newPerson = Person(firstName: firstName, lastName: lastName, yearOfBirth: yearOfBirth, parti: parti, urlLink: urlLink, gender: gender, status: status, imageMax: imageMax)
+                                    let newPerson = Person(firstName: firstName, lastName: lastName, yearOfBirth: yearOfBirth, parti: parti, urlLink: urlLink, gender: gender, status: status, imageMax: imageMax, valkrets: valkrets)
                                     self.list.append(newPerson)
                                     if index == personer.count-1 {
                                         completion(self.list, nil)

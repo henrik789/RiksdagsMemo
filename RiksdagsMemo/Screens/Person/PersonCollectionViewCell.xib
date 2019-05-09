@@ -19,54 +19,62 @@
                 <rect key="frame" x="0.0" y="0.0" width="360" height="160"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UeE-Pt-45h">
-                        <rect key="frame" x="140" y="15" width="150" height="112"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N83-Vb-dfI">
+                        <rect key="frame" x="8" y="10" width="105" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="105" id="Uj0-cB-K6c"/>
+                            <constraint firstAttribute="height" constant="140" id="y9E-dd-K8e"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UeE-Pt-45h">
+                        <rect key="frame" x="128" y="10" width="220" height="140"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fullname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4T-cs-cxb">
-                                <rect key="frame" x="0.0" y="0.0" width="150" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Fullname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4T-cs-cxb">
+                                <rect key="frame" x="0.0" y="0.0" width="220" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9p-iG-C65" userLabel="Status">
-                                <rect key="frame" x="0.0" y="30.5" width="150" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9p-iG-C65" userLabel="Status">
+                                <rect key="frame" x="0.0" y="31" width="220" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkL-lC-qMH" userLabel="Status">
-                                <rect key="frame" x="0.0" y="61" width="150" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="62" width="220" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valkrets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEr-GV-4UI" userLabel="Status">
+                                <rect key="frame" x="0.0" y="92.5" width="220" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUg-0k-WN6" userLabel="Status">
-                                <rect key="frame" x="0.0" y="91.5" width="150" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="123.5" width="220" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="width" constant="150" id="t71-ss-wAY"/>
+                            <constraint firstAttribute="height" constant="140" id="70c-QK-fzM"/>
+                            <constraint firstAttribute="width" constant="220" id="SrJ-zk-6fY"/>
                         </constraints>
                     </stackView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N83-Vb-dfI">
-                        <rect key="frame" x="15" y="10" width="105" height="140"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="N83-Vb-dfI" secondAttribute="height" multiplier="3:4" id="7Ka-Rc-B6O"/>
-                            <constraint firstAttribute="height" constant="140" id="DQd-R7-wOA"/>
-                        </constraints>
-                    </imageView>
                 </subviews>
             </view>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
             <constraints>
-                <constraint firstItem="UeE-Pt-45h" firstAttribute="leading" secondItem="N83-Vb-dfI" secondAttribute="trailing" constant="20" id="BJF-iF-RuK"/>
-                <constraint firstItem="N83-Vb-dfI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Imf-e2-ePh"/>
-                <constraint firstItem="UeE-Pt-45h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="QYF-Qw-G1t"/>
-                <constraint firstItem="N83-Vb-dfI" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="gVv-y4-T2e"/>
-                <constraint firstAttribute="bottom" secondItem="UeE-Pt-45h" secondAttribute="bottom" constant="33" id="sN6-RR-2k5"/>
+                <constraint firstItem="N83-Vb-dfI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="LFR-ke-iUG"/>
+                <constraint firstAttribute="bottom" secondItem="N83-Vb-dfI" secondAttribute="bottom" constant="10" id="OdK-RM-6ZE"/>
+                <constraint firstItem="N83-Vb-dfI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Ubr-6i-Dek"/>
+                <constraint firstAttribute="bottom" secondItem="UeE-Pt-45h" secondAttribute="bottom" constant="10" id="W5u-1E-pEi"/>
+                <constraint firstItem="UeE-Pt-45h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="aVD-lF-rtI"/>
+                <constraint firstItem="UeE-Pt-45h" firstAttribute="leading" secondItem="N83-Vb-dfI" secondAttribute="trailing" constant="15" id="mBJ-jh-VYn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
@@ -75,6 +83,7 @@
                 <outlet property="imageView" destination="N83-Vb-dfI" id="mYo-nU-iZ1"/>
                 <outlet property="partyLabel" destination="TUg-0k-WN6" id="ac9-qe-KWC"/>
                 <outlet property="statusLabel" destination="IkL-lC-qMH" id="YtH-Om-IZp"/>
+                <outlet property="valkretsLabel" destination="XEr-GV-4UI" id="3Kc-VM-cMA"/>
             </connections>
             <point key="canvasLocation" x="100.8" y="48.575712143928037"/>
         </collectionViewCell>

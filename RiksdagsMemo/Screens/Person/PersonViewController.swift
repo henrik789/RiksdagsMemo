@@ -1,5 +1,6 @@
 import UIKit
 import Kingfisher
+import SwiftyJSON
 
 private let cellIdentifier = "BasicCell"
 
@@ -57,7 +58,7 @@ extension PersonViewController: UICollectionViewDelegate, UICollectionViewDataSo
         self.activityIndicator.stopAnimating()
         self.activityIndicator.hidesWhenStopped = true
         let person = viewModel.persons[indexPath.row]
-        cell.config(firstName: person.fullName(), status: person.status, party: person.parti, urlLink: person.urlLink, age: person.age())
+        cell.config(firstName: person.fullName(), status: person.status, party: person.parti, urlLink: person.urlLink, age: person.age(), valkrets: person.valkrets)
     
         return cell
     }

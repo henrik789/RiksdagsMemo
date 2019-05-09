@@ -27,9 +27,10 @@ struct Person {
     let gender : String
     let status : String
     let imageMax : String
+    let valkrets : String
 
 
-    init(firstName: String, lastName: String, yearOfBirth: String, parti: String, urlLink: String, gender: String, status: String, imageMax: String){
+    init(firstName: String, lastName: String, yearOfBirth: String, parti: String, urlLink: String, gender: String, status: String, imageMax: String, valkrets: String){
 
         self.firstName = firstName
         self.lastName = lastName
@@ -39,6 +40,7 @@ struct Person {
         self.gender = gender
         self.status = status
         self.imageMax = imageMax
+        self.valkrets = valkrets
     }
 
     func fullName () -> String {
