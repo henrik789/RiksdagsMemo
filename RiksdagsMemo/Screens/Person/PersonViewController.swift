@@ -1,6 +1,5 @@
 import UIKit
 import Kingfisher
-import SwiftyJSON
 
 private let cellIdentifier = "BasicCell"
 
@@ -28,22 +27,24 @@ class PersonViewController: UIViewController {
     
     func initConfig() {
         loadData()
-        
+        viewModel.updatePersons { (error) in
+            print("hej")
+        }
         
     }
     
     func loadData() {
         activityIndicator.startAnimating()
-        viewModel.updatePersons {
-            (error) in
-            self.collectionView.reloadData()
-            print(self.viewModel.persons)
-            self.title = self.viewModel.title
-            self.collectionView.dataSource = self
-            self.collectionView.delegate = self
-            self.collectionView.register(UINib.init(nibName: PersonCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: PersonCollectionViewCell.identifier)
-        
-        }
+//        viewModel.updatePersons {
+//            (error) in
+//            self.collectionView.reloadData()
+//            print(self.viewModel.persons)
+//            self.title = self.viewModel.title
+//            self.collectionView.dataSource = self
+//            self.collectionView.delegate = self
+//            self.collectionView.register(UINib.init(nibName: PersonCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: PersonCollectionViewCell.identifier)
+//
+//        }
     }
 }
 
@@ -57,8 +58,8 @@ extension PersonViewController: UICollectionViewDelegate, UICollectionViewDataSo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PersonCollectionViewCell.identifier, for: indexPath) as! PersonCollectionViewCell
         self.activityIndicator.stopAnimating()
         self.activityIndicator.hidesWhenStopped = true
-        let person = viewModel.persons[indexPath.row]
-        cell.config(firstName: person.fullName(), status: person.status, party: person.parti, urlLink: person.urlLink, age: person.age(), valkrets: person.valkrets)
+//        let person = viewModel.persons[indexPath.row]
+//        cell.config(firstName: person.fullName(), status: person.status, party: person.parti, urlLink: person.urlLink, age: person.age(), valkrets: person.valkrets)
     
         return cell
     }
