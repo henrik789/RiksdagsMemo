@@ -26,7 +26,7 @@ class PersonCollectionViewCell: UICollectionViewCell {
         valkretsLabel.text = valkrets
         
         let url = URL(string: urlLink)
-        let processor = RoundCornerImageProcessor(cornerRadius: 18)
+        let processor = RoundCornerImageProcessor(cornerRadius: 12)
         imageView.kf.setImage(with: url, options: [.processor(processor)])
         imageView.kf.indicatorType = .activity
         imageView.kf.setImage(with: url)
@@ -37,9 +37,9 @@ class PersonCollectionViewCell: UICollectionViewCell {
         let size = CGSize(width: imageView.bounds.width, height: imageView.bounds.height)
         let rect = CGRect(origin: .zero, size: size)
         imageView.layer.shadowRadius = 3
-        imageView.layer.shadowPath = UIBezierPath(roundedRect: rect, cornerRadius: 18).cgPath
+        imageView.layer.shadowPath = UIBezierPath(roundedRect: rect, cornerRadius: 12).cgPath
         imageView.clipsToBounds = false
-
+        
     }
 
 }

@@ -16,25 +16,28 @@ class  DataManager {
     }
     
     
-    func getPersonsData(url: String) {
+    func getPersonsData(completion: @escaping ([Person], Error?) -> Void) {
         
-        Alamofire.request(url, method: .get).validate().responseJSON {
+        Alamofire.request(jsonUrlString, method: .get).validate().responseJSON {
             response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                self.updatePersonsData(json: json)
-            //                print("JSON: \(json)")
+                self.updatePersonsData(json: json) { ([Person]) in
+                let persons = [Person]()
+                completion(persons, nil)
+                }
             case .failure(let error):
                 print(error)
+                completion([], error)
             }
         }
-        
     }
     
-    func updatePersonsData(json : JSON) {
+    
+    func updatePersonsData(json : JSON, completion: @escaping ([Person]) -> Void) {
         
-        for index in 0..<349 {
+        for index in 0..<5{
             person.firstName = json["personlista"]["person"][index]["tilltalsnamn"].stringValue
             person.gender = json["personlista"]["name"][index]["kon"].stringValue
             person.parti = json["personlista"]["person"][index]["parti"].stringValue
@@ -48,12 +51,13 @@ class  DataManager {
             person.uppgift = json["personlista"]["person"][index]["personuppgift"]["uppgift"][0]["kod"].stringValue
             
             let newPerson = Person(firstName: person.firstName, lastName: person.lastName, yearOfBirth: person.yearOfBirth, parti: person.parti, urlLink: person.urlLink, gender: person.gender, status: person.status, imageMax: person.imageMax, valkrets: person.valkrets, uppdrag: person.uppdrag, uppgift: person.uppgift)
-            
             personList.append(newPerson)
             
-            print(personList.count)
             print("Uppdrag är: " , newPerson)
+            
         }
+        completion(personList)
+
     }
     
     

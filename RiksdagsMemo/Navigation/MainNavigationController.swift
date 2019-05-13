@@ -43,8 +43,6 @@ extension MainNavigationController: HomeViewControllerDelegate {
         case .person:
             let personViewModel = PersonViewModel(dataManager: serviceManager.dataManager)
             viewController = PersonViewController(viewModel: personViewModel)
-        default:
-            return
         }
 
         
