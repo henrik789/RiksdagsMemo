@@ -6,7 +6,6 @@ import Alamofire
 private let badResponseError = NSError(domain: "Bad network response", code: 2, userInfo: nil)
 
 class  DataManager {
-    var personList = [Person]()
     
     let networkService: NetworkService
     let jsonUrlString = "http://data.riksdagen.se/personlista/?iid=&fnamn=&enamn=&f_ar=&kn=&parti=&valkrets=&rdlstatus=&org=&utformat=json&termlista="
@@ -24,11 +23,14 @@ class  DataManager {
             case .success(let value):
                 let json = JSON(value)
                 print(json["personlista"]["@hits"].intValue)
-                for index in 0..<json["personlista"]["@hits"].intValue {
-                    let person = Person(json: json["personlista"]["person"][index])
-                    self.personList.append(person)
+                print("Starting time: \(Date())")
+      
+                let personList = json["personlista"]["person"].map { (_, personJSON) in
+                    return Person(json: personJSON)
                 }
-                completion(self.personList, nil)
+                
+                print("Ending time: \(Date())")
+                completion(personList, nil)
             case .failure(let error):
                 print(error)
                 completion([], error)

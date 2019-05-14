@@ -10,6 +10,8 @@ import UIKit
 
 class GraphsViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var textLabel: UILabel!
+    
     static var identifier: String {
         return "GraphsViewCell"
     }
