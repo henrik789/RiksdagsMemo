@@ -38,8 +38,6 @@ class PersonViewController: UIViewController {
         viewModel.updatePersons {
             (error) in
             self.collectionView.reloadData()
-            print("Från VC: ", self.viewModel.persons)
-
         }
     }
 }
