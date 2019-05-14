@@ -35,6 +35,7 @@
 		AFF93F96228ADA6700C39A9F /* GraphsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF93F94228ADA6700C39A9F /* GraphsViewController.xib */; };
 		AFF93F99228ADB4600C39A9F /* GraphsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF93F97228ADB4600C39A9F /* GraphsViewCell.swift */; };
 		AFF93F9A228ADB4600C39A9F /* GraphsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF93F98228ADB4600C39A9F /* GraphsViewCell.xib */; };
+		AFF93F9C228B000B00C39A9F /* GraphsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF93F9B228B000B00C39A9F /* GraphsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		AFF93F94228ADA6700C39A9F /* GraphsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphsViewController.xib; sourceTree = "<group>"; };
 		AFF93F97228ADB4600C39A9F /* GraphsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsViewCell.swift; sourceTree = "<group>"; };
 		AFF93F98228ADB4600C39A9F /* GraphsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphsViewCell.xib; sourceTree = "<group>"; };
+		AFF93F9B228B000B00C39A9F /* GraphsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsViewModel.swift; sourceTree = "<group>"; };
 		D26FC749DDC983F5F43EF6AD /* Pods-RiksdagsMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiksdagsMemo.debug.xcconfig"; path = "Target Support Files/Pods-RiksdagsMemo/Pods-RiksdagsMemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				AFF93F93228ADA6700C39A9F /* GraphsViewController.swift */,
+				AFF93F9B228B000B00C39A9F /* GraphsViewModel.swift */,
 				AFF93F94228ADA6700C39A9F /* GraphsViewController.xib */,
 				AFF93F97228ADB4600C39A9F /* GraphsViewCell.swift */,
 				AFF93F98228ADB4600C39A9F /* GraphsViewCell.xib */,
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF60B748227B087C0060608C /* MainNavigationController.swift in Sources */,
+				AFF93F9C228B000B00C39A9F /* GraphsViewModel.swift in Sources */,
 				AF60B754227B0A530060608C /* Request.swift in Sources */,
 				AF60B750227B09E80060608C /* DataManager.swift in Sources */,
 				AF60B767227B0E760060608C /* PersonViewModel.swift in Sources */,

@@ -37,8 +37,7 @@ class HomeViewController: UIViewController {
         delegate?.homeViewController(self, didSelect: .person)
     }
     @IBAction func graphsButton(_ sender: Any) {
-//        delegate?.homeViewController(self, didSelect: .graphs)
-        present(GraphsViewController(), animated: true)
+        delegate?.homeViewController(self, didSelect: .graphs)
     }
     
     
@@ -47,7 +46,7 @@ class HomeViewController: UIViewController {
         factsButton.commonStyle()
         memoryButton.commonStyle()
         graphsButton.commonStyle()
-        
+        topView.isHidden = true
         let layergradient = CAGradientLayer()
         let startcolor = UIColor.aluminum.cgColor
         let endcolor = UIColor.steel.cgColor
@@ -58,10 +57,10 @@ class HomeViewController: UIViewController {
 //        topView.layer.addSublayer(layergradient)
         
         let navbar = navigationController?.navigationBar
-        navbar?.isHidden = true
+        navbar?.isHidden = false
         navbar?.prefersLargeTitles = true
-        navbar?.barStyle = .blackTranslucent
-        navbar?.tintColor = UIColor.white
+        navbar?.barStyle = .default
+//        navbar?.tintColor = UIColor.white
 
     }
 }

@@ -43,12 +43,10 @@ extension MainNavigationController: HomeViewControllerDelegate {
         case .person:
             let personViewModel = PersonViewModel(dataManager: serviceManager.dataManager)
             viewController = PersonViewController(viewModel: personViewModel)
-            
-//        case .graphs:
-//            let viewController = GraphsCollectionViewController()
-        
         case .graphs:
-            return
+            let graphsViewModel = GraphsViewModel(dataManager: serviceManager.dataManager)
+            viewController = GraphsViewController(viewModel: graphsViewModel)
+        
         }
 
         

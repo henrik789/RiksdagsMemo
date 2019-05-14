@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,10 +19,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="360" height="160"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BcH-Lb-oMh">
-                        <rect key="frame" x="5" y="5" width="118" height="150"/>
-                        <color key="backgroundColor" name="Whiteish"/>
-                    </view>
                     <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UeE-Pt-45h">
                         <rect key="frame" x="128" y="60" width="220" height="90"/>
                         <subviews>
@@ -69,16 +64,12 @@
             <constraints>
                 <constraint firstItem="N83-Vb-dfI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="LFR-ke-iUG"/>
                 <constraint firstAttribute="bottom" secondItem="N83-Vb-dfI" secondAttribute="bottom" constant="10" id="OdK-RM-6ZE"/>
-                <constraint firstItem="UeE-Pt-45h" firstAttribute="leading" secondItem="BcH-Lb-oMh" secondAttribute="trailing" constant="5" id="SP9-ql-1Zs"/>
                 <constraint firstItem="N83-Vb-dfI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Ubr-6i-Dek"/>
                 <constraint firstAttribute="bottom" secondItem="UeE-Pt-45h" secondAttribute="bottom" constant="10" id="W5u-1E-pEi"/>
-                <constraint firstItem="BcH-Lb-oMh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="a49-Ge-Ije"/>
                 <constraint firstItem="UeE-Pt-45h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="60" id="aVD-lF-rtI"/>
                 <constraint firstItem="5ho-2Q-Wd6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="dT5-7e-GWx"/>
                 <constraint firstAttribute="trailing" secondItem="5ho-2Q-Wd6" secondAttribute="trailing" constant="5" id="iPd-Ti-E3j"/>
-                <constraint firstItem="BcH-Lb-oMh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="isG-Fs-UoN"/>
                 <constraint firstItem="UeE-Pt-45h" firstAttribute="leading" secondItem="N83-Vb-dfI" secondAttribute="trailing" constant="15" id="mBJ-jh-VYn"/>
-                <constraint firstAttribute="bottom" secondItem="BcH-Lb-oMh" secondAttribute="bottom" constant="5" id="u2I-Ka-L1n"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
@@ -91,9 +82,4 @@
             <point key="canvasLocation" x="100.8" y="48.575712143928037"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <namedColor name="Whiteish">
-            <color red="0.97000002861022949" green="0.94999998807907104" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>
