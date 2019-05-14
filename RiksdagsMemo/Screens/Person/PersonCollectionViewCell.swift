@@ -17,7 +17,7 @@ class PersonCollectionViewCell: UICollectionViewCell {
     
     func config(firstName: String, status: String, party: String, urlLink: String, age: String, valkrets: String){
         
-        self.layer.cornerRadius = 16
+        self.layer.cornerRadius = 14
         self.layer.masksToBounds = true
         fullnameLabel.text = "Namn: " + firstName
         genderLabel.text = "Ålder: " + age
@@ -26,19 +26,22 @@ class PersonCollectionViewCell: UICollectionViewCell {
         valkretsLabel.text = valkrets
         
         let url = URL(string: urlLink)
-        let processor = RoundCornerImageProcessor(cornerRadius: 12)
-        imageView.kf.setImage(with: url, options: [.processor(processor)])
+//        let processor = RoundCornerImageProcessor(cornerRadius: 24)
+//        imageView.kf.setImage(with: url, options: [.processor(processor)])
         imageView.kf.indicatorType = .activity
         imageView.kf.setImage(with: url)
         
         imageView.layer.shadowColor = UIColor.black.cgColor
-        imageView.layer.shadowOpacity = 0.4
+        imageView.layer.shadowOpacity = 0.6
         imageView.layer.shadowOffset = CGSize(width: 2, height: 3)
         let size = CGSize(width: imageView.bounds.width, height: imageView.bounds.height)
+        print(size)
         let rect = CGRect(origin: .zero, size: size)
         imageView.layer.shadowRadius = 3
         imageView.layer.shadowPath = UIBezierPath(roundedRect: rect, cornerRadius: 12).cgPath
-        imageView.clipsToBounds = false
+        imageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMaxYCorner]
+
+        imageView.clipsToBounds = true
         
     }
 

@@ -28,6 +28,9 @@
 		AFBE401D22819B0200498E0C /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBE401B22819B0200498E0C /* PersonCollectionViewCell.swift */; };
 		AFBE401E22819B0200498E0C /* PersonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBE401C22819B0200498E0C /* PersonCollectionViewCell.xib */; };
 		AFBE40202281C0AB00498E0C /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBE401F2281C0AB00498E0C /* Gradient.swift */; };
+		AFF93F85228AB9FF00C39A9F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF93F84228AB9FF00C39A9F /* UIColor.swift */; };
+		AFF93F87228ABA0800C39A9F /* SnowFall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF93F86228ABA0800C39A9F /* SnowFall.swift */; };
+		AFF93F89228ABC6800C39A9F /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF93F88228ABC6800C39A9F /* StatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		AFBE401B22819B0200498E0C /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
 		AFBE401C22819B0200498E0C /* PersonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionViewCell.xib; sourceTree = "<group>"; };
 		AFBE401F2281C0AB00498E0C /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		AFF93F84228AB9FF00C39A9F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		AFF93F86228ABA0800C39A9F /* SnowFall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowFall.swift; sourceTree = "<group>"; };
+		AFF93F88228ABC6800C39A9F /* StatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
 		D26FC749DDC983F5F43EF6AD /* Pods-RiksdagsMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiksdagsMemo.debug.xcconfig"; path = "Target Support Files/Pods-RiksdagsMemo/Pods-RiksdagsMemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,8 +124,11 @@
 		AF60B742227B07F50060608C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				AFF93F86228ABA0800C39A9F /* SnowFall.swift */,
+				AFF93F84228AB9FF00C39A9F /* UIColor.swift */,
 				AFBBA8EE22831A9F0091752A /* UIButton.swift */,
 				AFBE401F2281C0AB00498E0C /* Gradient.swift */,
+				AFF93F88228ABC6800C39A9F /* StatView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -323,7 +332,9 @@
 				AF60B754227B0A530060608C /* Request.swift in Sources */,
 				AF60B750227B09E80060608C /* DataManager.swift in Sources */,
 				AF60B767227B0E760060608C /* PersonViewModel.swift in Sources */,
+				AFF93F85228AB9FF00C39A9F /* UIColor.swift in Sources */,
 				AF60B733227B05D40060608C /* ViewController.swift in Sources */,
+				AFF93F89228ABC6800C39A9F /* StatView.swift in Sources */,
 				AF60B731227B05D40060608C /* AppDelegate.swift in Sources */,
 				AF60B75F227B0D230060608C /* PersonViewController.swift in Sources */,
 				AFBE401D22819B0200498E0C /* PersonCollectionViewCell.swift in Sources */,
@@ -333,6 +344,7 @@
 				AFBBA8EF22831A9F0091752A /* UIButton.swift in Sources */,
 				AFBE40202281C0AB00498E0C /* Gradient.swift in Sources */,
 				AF60B752227B0A390060608C /* NetworkService.swift in Sources */,
+				AFF93F87228ABA0800C39A9F /* SnowFall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

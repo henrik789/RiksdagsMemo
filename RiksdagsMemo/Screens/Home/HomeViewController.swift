@@ -1,5 +1,6 @@
 
 import UIKit
+import CoreMotion
 
 protocol HomeViewControllerDelegate: class {
     func homeViewController(_ viewController: HomeViewController, didSelect action: HomeViewControllerAction)
@@ -11,7 +12,9 @@ enum HomeViewControllerAction {
 
 class HomeViewController: UIViewController {
     weak var delegate: HomeViewControllerDelegate?
+    var motionManager = CMMotionManager()
     
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var factsButton: UIButton!
     @IBOutlet weak var graphsButton: UIButton!
     @IBOutlet weak var memoryButton: UIButton!
@@ -38,11 +41,20 @@ class HomeViewController: UIViewController {
         memoryButton.commonStyle()
         graphsButton.commonStyle()
         
+        let layergradient = CAGradientLayer()
+        let startcolor = UIColor.aluminum.cgColor
+        let endcolor = UIColor.steel.cgColor
+        layergradient.colors = [startcolor, endcolor]
+        layergradient.startPoint = CGPoint(x: 0, y: 0)
+        layergradient.endPoint = CGPoint(x: 0, y: 1)
+        layergradient.frame = CGRect(x: 0, y: 0, width: topView.bounds.width, height: topView.bounds.height)
+//        topView.layer.addSublayer(layergradient)
+        
         let navbar = navigationController?.navigationBar
+        navbar?.isHidden = true
         navbar?.prefersLargeTitles = true
-        navbar?.barStyle = .default
-        navbar?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black,  NSAttributedString.Key.font: UIFont(name: "Avenir Next", size: 21)!]
-        navbar?.tintColor = UIColor.black
+        navbar?.barStyle = .blackTranslucent
+        navbar?.tintColor = UIColor.white
 
     }
 }

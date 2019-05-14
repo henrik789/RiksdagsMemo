@@ -2,14 +2,19 @@ import UIKit
 
 extension UIButton {
     func commonStyle() {
-        layer.cornerRadius = 14
+        layer.cornerRadius = 16
         layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: layer.cornerRadius).cgPath
         layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 0.3
-        layer.shadowOffset = CGSize(width: 1, height: -3)
+        layer.shadowOpacity = 0.8
+        layer.shadowOffset = CGSize.zero
         layer.shadowRadius = 3.0
+        layer.borderColor = UIColor.blue.cgColor
+        layer.borderWidth = 0.5
         layer.masksToBounds = false
+
     }
+    
+
     
 //    func animateButton1(button: UIButton, screenWidth: CGFloat, screenHeight: CGFloat){
 //
