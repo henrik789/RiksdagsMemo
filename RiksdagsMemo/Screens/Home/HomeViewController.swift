@@ -8,6 +8,7 @@ protocol HomeViewControllerDelegate: class {
 
 enum HomeViewControllerAction {
     case person
+    case graphs
 }
 
 class HomeViewController: UIViewController {
@@ -35,6 +36,12 @@ class HomeViewController: UIViewController {
     @IBAction func personsButton(_ sender: Any) {
         delegate?.homeViewController(self, didSelect: .person)
     }
+    @IBAction func graphsButton(_ sender: Any) {
+//        delegate?.homeViewController(self, didSelect: .graphs)
+        present(GraphsViewController(), animated: true)
+    }
+    
+    
     func config(){
         personsButton.commonStyle()
         factsButton.commonStyle()

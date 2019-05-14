@@ -9,7 +9,7 @@ class StatView: UIView {
     let captionLabel = UILabel()
     
     var range: CGFloat = 10
-    var curValue: CGFloat = 0 {
+    var curValue: CGFloat = 12 {
         didSet {
             animate()
         }
@@ -50,7 +50,7 @@ class StatView: UIView {
         layer.addSublayer(bgLayer)
         fgLayer.lineWidth = 20.0
         fgLayer.fillColor = nil
-        fgLayer.strokeEnd = 0
+        fgLayer.strokeEnd = 23
         layer.addSublayer(fgLayer)
         
         // Setup percent label
@@ -90,9 +90,9 @@ class StatView: UIView {
     
     private func setupShapeLayer(shapeLayer:CAShapeLayer) {
         shapeLayer.frame = self.bounds
-        let startAngle = GLKMathDegreesToRadians(_ : 135)
-        let endAngle = GLKMathDegreesToRadians(_ : 45)
-        let center = percentLabel.center
+        let startAngle = GLKMathDegreesToRadians(_ : 115)
+        let endAngle = GLKMathDegreesToRadians(_ : 65)
+        let center = CGPoint(x: self.bounds.width / 2, y: self.bounds.height / 2)
         let radius = shapeLayer.frame.width * 0.35
         let path = UIBezierPath(arcCenter: center, radius: radius, startAngle: CGFloat(startAngle), endAngle: CGFloat(endAngle), clockwise: true)
         shapeLayer.path = path.cgPath

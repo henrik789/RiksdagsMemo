@@ -31,6 +31,10 @@
 		AFF93F85228AB9FF00C39A9F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF93F84228AB9FF00C39A9F /* UIColor.swift */; };
 		AFF93F87228ABA0800C39A9F /* SnowFall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF93F86228ABA0800C39A9F /* SnowFall.swift */; };
 		AFF93F89228ABC6800C39A9F /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF93F88228ABC6800C39A9F /* StatView.swift */; };
+		AFF93F95228ADA6700C39A9F /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF93F93228ADA6700C39A9F /* GraphsViewController.swift */; };
+		AFF93F96228ADA6700C39A9F /* GraphsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF93F94228ADA6700C39A9F /* GraphsViewController.xib */; };
+		AFF93F99228ADB4600C39A9F /* GraphsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF93F97228ADB4600C39A9F /* GraphsViewCell.swift */; };
+		AFF93F9A228ADB4600C39A9F /* GraphsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF93F98228ADB4600C39A9F /* GraphsViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,10 @@
 		AFF93F84228AB9FF00C39A9F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		AFF93F86228ABA0800C39A9F /* SnowFall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowFall.swift; sourceTree = "<group>"; };
 		AFF93F88228ABC6800C39A9F /* StatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
+		AFF93F93228ADA6700C39A9F /* GraphsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsViewController.swift; sourceTree = "<group>"; };
+		AFF93F94228ADA6700C39A9F /* GraphsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphsViewController.xib; sourceTree = "<group>"; };
+		AFF93F97228ADB4600C39A9F /* GraphsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsViewCell.swift; sourceTree = "<group>"; };
+		AFF93F98228ADB4600C39A9F /* GraphsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphsViewCell.xib; sourceTree = "<group>"; };
 		D26FC749DDC983F5F43EF6AD /* Pods-RiksdagsMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiksdagsMemo.debug.xcconfig"; path = "Target Support Files/Pods-RiksdagsMemo/Pods-RiksdagsMemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +144,7 @@
 		AF60B743227B08020060608C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				AFF93F8A228AD4AA00C39A9F /* Graphs */,
 				AF60B75C227B0D0F0060608C /* Person */,
 				AF60B75B227B0D030060608C /* Home */,
 			);
@@ -189,6 +198,17 @@
 				AFBE401C22819B0200498E0C /* PersonCollectionViewCell.xib */,
 			);
 			path = Person;
+			sourceTree = "<group>";
+		};
+		AFF93F8A228AD4AA00C39A9F /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				AFF93F93228ADA6700C39A9F /* GraphsViewController.swift */,
+				AFF93F94228ADA6700C39A9F /* GraphsViewController.xib */,
+				AFF93F97228ADB4600C39A9F /* GraphsViewCell.swift */,
+				AFF93F98228ADB4600C39A9F /* GraphsViewCell.xib */,
+			);
+			path = Graphs;
 			sourceTree = "<group>";
 		};
 		E9FB8F73BCE34D43CFD715ED /* Pods */ = {
@@ -264,8 +284,10 @@
 				AF60B73B227B05D60060608C /* LaunchScreen.storyboard in Resources */,
 				AFBE401E22819B0200498E0C /* PersonCollectionViewCell.xib in Resources */,
 				AF60B760227B0D230060608C /* PersonViewController.xib in Resources */,
+				AFF93F9A228ADB4600C39A9F /* GraphsViewCell.xib in Resources */,
 				AF60B738227B05D60060608C /* Assets.xcassets in Resources */,
 				AF60B736227B05D40060608C /* Main.storyboard in Resources */,
+				AFF93F96228ADA6700C39A9F /* GraphsViewController.xib in Resources */,
 				AF60B74C227B090B0060608C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,8 +357,10 @@
 				AFF93F85228AB9FF00C39A9F /* UIColor.swift in Sources */,
 				AF60B733227B05D40060608C /* ViewController.swift in Sources */,
 				AFF93F89228ABC6800C39A9F /* StatView.swift in Sources */,
+				AFF93F95228ADA6700C39A9F /* GraphsViewController.swift in Sources */,
 				AF60B731227B05D40060608C /* AppDelegate.swift in Sources */,
 				AF60B75F227B0D230060608C /* PersonViewController.swift in Sources */,
+				AFF93F99228ADB4600C39A9F /* GraphsViewCell.swift in Sources */,
 				AFBE401D22819B0200498E0C /* PersonCollectionViewCell.swift in Sources */,
 				AF60B74B227B090B0060608C /* HomeViewController.swift in Sources */,
 				AF60B756227B0A7D0060608C /* Person.swift in Sources */,
