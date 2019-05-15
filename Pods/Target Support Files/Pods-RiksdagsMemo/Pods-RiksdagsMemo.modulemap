@@ -1,0 +1,6 @@
+framework module Pods_RiksdagsMemo {
+  umbrella header "Pods-RiksdagsMemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
